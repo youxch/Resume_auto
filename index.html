@@ -20,7 +20,7 @@
   --white:   #FFFFFF;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);font-family:'Noto Serif SC',serif;color:var(--ink);font-size:14px;line-height:1.75}
+body{background:var(--bg);font-family:'Noto Serif SC',serif;color:var(--ink);font-size:14px;line-height:1.75;overflow-x:hidden}
 .page{max-width:860px;margin:32px auto;background:var(--white);padding:40px 48px;
        box-shadow:0 2px 24px rgba(0,0,0,.10);
        border-left:4px solid;
@@ -285,5 +285,28 @@ GitHub 浏览量 <b>10 万+</b>，天线/超构表面 AI 设计领域排名第�
     </div>
 
 </div>
+
+<script>
+(function () {
+  var DESIGN_W = 920; /* 860px card + ~60px body margins */
+  function fit() {
+    var page = document.querySelector('.page');
+    if (!page) return;
+    var vw = document.documentElement.clientWidth;
+    if (vw < DESIGN_W) {
+      var s = vw / DESIGN_W;
+      page.style.transformOrigin = 'top center';
+      page.style.transform = 'scale(' + s + ')';
+      /* 折叠缩放后多余的底部空白 */
+      page.style.marginBottom = '-' + Math.floor(page.offsetHeight * (1 - s)) + 'px';
+    } else {
+      page.style.transform = '';
+      page.style.marginBottom = '';
+    }
+  }
+  window.addEventListener('load', fit);
+  window.addEventListener('resize', fit);
+}());
+</script>
 </body>
 </html>
