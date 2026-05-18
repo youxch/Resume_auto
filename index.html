@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=920">
 <title>尤栖冲 · 简历 · AI for Science</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -120,7 +120,7 @@ h1{font-family:var(--serif-zh);font-size:34px;font-weight:700;letter-spacing:.12
       <div><span class="school">上海科技大学（双一流）</span> <span class="degree">电子科学与技术 · 硕博连读</span></div>
       <div class="courses">主要课程：深度学习、高阶分布式系统、天线理论与技术、矩阵计算</div>
     </div>
-    <div class="edu-rank">专业前1% · 导师：林丰翰教授</div>
+    <div class="edu-rank">专业前1% · 导师：林丰涵教授</div>
   </div>
   <div class="edu-entry">
     <div class="edu-date">2018.9 – 2022.6</div>
@@ -176,22 +176,22 @@ h1{font-family:var(--serif-zh);font-size:34px;font-weight:700;letter-spacing:.12
 
   <div class="proj-entry">
     <div class="proj-hd">
-      <span class="proj-date-w">2022.9 – 2025.11</span>
-      <span class="proj-title-w">某重点单位合作 + 华为横向——AI驱动超构表面逆向设计与工程验证</span>
-      <span class="proj-src-w">（某重点单位 / 华为横向合作）</span>
+      <span class="proj-date-w">2022.9 – 2024.6</span>
+      <span class="proj-title-w">某重点单位合作项目——大规模特征模式数据库与DCVAE逆向设计框架</span>
+      <span class="proj-src-w">（某重点单位合作项目）</span>
       <span class="proj-role-w">主要负责人</span>
     </div>
     <div class="proj-content">
       <div class="proj-seg">
         <div class="proj-num">1. 研究目标</div>
-        针对超构表面AI设计的两核心瓶颈——缺乏大规模高质量物理数据集与AI模型物理可解释性不足，<b>首次</b>构建兼具数据规模与物理约束的生成式设计框架，并完成从AI设计方案到工程实物的全链路闭环验证。
+        针对超构表面AI设计缺乏大规模高质量物理数据集的核心瓶颈，<b>首次</b>构建兼具数据规模与物理约束的生成式正逆向设计框架，实现从AI设计到RCS仿真验证的完整闭环。
       </div>
       <div class="proj-seg">
         <div class="proj-num">2. 研究内容</div>
         ① <b>特征模式数据库构建：</b>棋盘离散编码统一表征，构建 <b>55,000条</b> 高质量特征模式数据集（超合同要求10%）；
         ② <b>DCVAE正逆向设计框架：</b>深度卷积VAE实现结构↔模式双向映射，速度达全波仿真 <b>1000×</b>；
-        ③ <b>CMA物理约束框架：</b>首次以特征模式为基函数，PSO优化模式权重，定量论证可行性边界；
-        ④ <b>全链路工程验证：</b>物理样机制备，通过CNAS第三方认证测试，闭环验证AI设计方案。
+        ③ <b>Physics-Informed数据标注：</b>以特征模式物理量作为数据标签，数据标注成本降至传统方法 <b>1/10</b>；
+        ④ <b>RCS隐身性能验证：</b>棋盘相位码超构表面全波仿真验证，RCS调控幅度达 <b>+193%</b>。
       </div>
       <div class="proj-seg">
         <div class="proj-num">3. 关键结果</div>
@@ -200,12 +200,48 @@ h1{font-family:var(--serif-zh);font-size:34px;font-weight:700;letter-spacing:.12
           <div class="kpi"><div class="num">1000×</div><div class="lbl">正逆向设计加速比</div></div>
           <div class="kpi"><div class="num">+193%</div><div class="lbl">RCS调控幅度提升</div></div>
         </div>
-        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>RCS调控幅度达 <b>+193%</b>（超合同要求873%），新增特征模式 <b>2个</b>（超额100%）</span></div>
-        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>MIMO天线实测带宽 <b>28.6%</b>，端口隔离 <b>≥30 dB</b> 全频段，增益 <b>7.4 dBi</b>（@θ=45°），超越新加坡NUS三篇顶刊同类工作</span></div>
+        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>构建 <b>55,000条</b> 特征模式数据集，数据标注成本降至传统方法 <b>1/10</b>，正逆向推理加速全波仿真 <b>1000×</b></span></div>
+        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>RCS调控幅度达 <b>+193%</b>（超合同要求873%），新增特征模式 <b>2个</b>（超额100%），抑制模式 <b>2个</b>（超额100%）</span></div>
       </div>
       <div class="proj-seg">
         <div class="proj-num">4. 研究成果</div>
-        两项目均已通过验收（CNAS认证），发表已发表国际期刊及会议论文共 <b>5篇</b>，含 IEEE iWAT 2026（英国，已发表）。合同全部指标超额交付。
+        项目验收全部指标超额交付；发表国际期刊及会议论文 <b>3篇</b>（含 IEEE iWAT 2026，英国）；DCVAE方法论可迁移至多物理场景代理模型任务。
+      </div>
+    </div>
+  </div>
+
+  <div class="proj-entry">
+    <div class="proj-hd">
+      <span class="proj-date-w">2023.9 – 2025.11</span>
+      <span class="proj-title-w">华为横向合作项目——CMA物理约束框架与MIMO天线工程验证</span>
+      <span class="proj-src-w">（华为横向合作）</span>
+      <span class="proj-role-w">主要负责人</span>
+    </div>
+    <div class="proj-content">
+      <div class="proj-seg">
+        <div class="proj-num">1. 研究目标</div>
+        针对AI天线设计物理可解释性不足、工程落地验证缺失的瓶颈，<b>首次</b>以特征模式分析（CMA）为物理约束基函数构建可解释性生成框架，并完成从AI设计到物理样机CNAS认证的全链路工程闭环。
+      </div>
+      <div class="proj-seg">
+        <div class="proj-num">2. 研究内容</div>
+        ① <b>CMA物理约束框架：</b>首次以特征模式为基函数，PSO优化模式激励权重，定量论证物理可行性边界；
+        ② <b>三模式激励接力机制：</b>跨频段三模式无缝接力实现 <b>28.6%</b> 宽带覆盖（超越业界典型值）；
+        ③ <b>全链路工程验证：</b>物理样机制备，通过CNAS第三方认证微波暗室实测，实测数据与AI设计高度一致；
+        ④ <b>模式追踪算法发表：</b>将CMA模式追踪方法提炼为通用算法，发表于 <i>Electromagnetic Science</i>。
+      </div>
+      <div class="proj-seg">
+        <div class="proj-num">3. 关键结果</div>
+        <div class="kpi-grid">
+          <div class="kpi"><div class="num">28.6%</div><div class="lbl">实测相对带宽</div></div>
+          <div class="kpi"><div class="num">≥30 dB</div><div class="lbl">全频段端口隔离</div></div>
+          <div class="kpi"><div class="num">20×</div><div class="lbl">模式追踪超商用软件精度</div></div>
+        </div>
+        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>MIMO天线实测带宽 <b>28.6%</b>，端口隔离 <b>≥30 dB</b> 全频段，增益 <b>7.4 dBi</b>（@θ=45°），超越新加坡NUS三篇顶刊同类工作</span></div>
+        <div class="bullet-w"><span class="bullet-dot-w">◆</span><span>相关模式追踪方法发表于 <i>Electromagnetic Science</i>（IEEE期刊），精度超越商用软件 <b>20倍</b>；模式追踪方法论可直接复用于多物理场景AI设计</span></div>
+      </div>
+      <div class="proj-seg">
+        <div class="proj-num">4. 研究成果</div>
+        项目通过华为验收，CNAS认证全部实测指标达标；发表国际期刊论文 <b>2篇</b>（EM Science + iWAT 2026）；CMA物理约束方法论为AI4S物理可解释性研究提供可复现基础。
       </div>
     </div>
   </div>
@@ -247,18 +283,18 @@ h1{font-family:var(--serif-zh);font-size:34px;font-weight:700;letter-spacing:.12
   <div class="section-title">发表论文（共 7 篇，均为第一作者）</div>
   <div class="paper-w">
     <span class="paper-num">[1]</span>
-    <span class="paper-text"> <b>Xi Chong You</b>, C.T. Gao, F.H. Lin, "Wideband Multi-Mode Tracking Using Near-Field Global-Correlation Method," <i>Electromagnetic Science</i>, vol.4, no.1, 0130512, Mar. 2026.</span><br>
-    <span class="paper-badge">IEEE期刊 · Gold Open Access · 第一作者</span>
+    <span class="paper-text"> <b>X.C. You</b>, F.H. Lin, "Inverse Design of Reflective Metasurface Antennas Using Deep Learning from Small-Scale Statistically Random Pico-Cells," <i>Microw. Opt. Technol. Lett.</i>, vol.66, no.2, Feb. 2024.</span><br>
+    <span class="paper-badge">Wiley期刊 · AI4S核心方法 · 第一作者 · 唯一学生作者 · 高被引作者奖 + Marina Forum提名奖（新加坡）</span>
   </div>
   <div class="paper-w">
     <span class="paper-num">[2]</span>
-    <span class="paper-text"> <b>Xi Chong You</b>, F.H. Lin, "Wideband Massive Characteristic-Mode Tracking… <i>iWAT 2026</i>, DOI: 10.1109/IWAT66946.2026.11501863.</span><br>
-    <span class="paper-badge">IEEE年会 · 第一作者 · 唯一学生作者</span>
+    <span class="paper-text"> <b>Xi Chong You</b>, C.T. Gao, F.H. Lin, "Wideband Multi-Mode Tracking Using Near-Field Global-Correlation Method," <i>Electromagnetic Science</i>, vol.4, no.1, 0130512, Mar. 2026.</span><br>
+    <span class="paper-badge">IEEE期刊 · 第一作者 · CMA模式追踪精度超越商用软件20倍</span>
   </div>
   <div class="paper-w">
     <span class="paper-num">[3]</span>
-    <span class="paper-text"> <b>X.C. You</b>, F.H. Lin, "Inverse Design of Reflective Metasurface Antennas Using Deep Learning…" <i>Microw. Opt. Technol. Lett.</i>, vol.66, Feb. 2024.</span><br>
-    <span class="paper-badge">Wiley期刊 · AI4S核心方法 · 第一作者 · 唯一学生作者 · 高被引作者奖 + Marina Forum提名奖（新加坡）</span>
+    <span class="paper-text"> <b>Xi Chong You</b>, F.H. Lin, "Wideband Massive Characteristic-Mode Tracking of Metasurfaces Using Single-Layer Near-Field Global-Correlation (NFGC) Method," <i>iWAT 2026</i>, DOI: 10.1109/IWAT66946.2026.11501863.</span><br>
+    <span class="paper-badge">IEEE年会 · 第一作者 · 唯一学生作者</span>
   </div>
   <div class="paper-w">
     <span class="paper-num">[4]</span>
